@@ -27,6 +27,13 @@ body{
 .title{
     float: inherit;
     margin-left: 20%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%; 
+
 }
 
 .left{
@@ -42,13 +49,24 @@ body{
     margin-left: 10%;
     margin-top: 10%;
     width: 80%;
-    height: 80%;
-    color: #0A3871;
-    font-size: 32px;
+    height: 80%;    
     border: none;
     outline: none;
     background-color: #F3F5FC;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%; 
+    
 }
+
+::placeholder{
+    color: #0A3871;
+    opacity: 1;
+}
+
 
 .right{
     float: right;
@@ -90,22 +108,66 @@ body{
     
 }
 
+.info {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 16px 60px;
+}
+
+.info img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.info p {
+    margin-left: 8px;
+    display: inline-block;
+    color: #3d3d3d;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+}
+
+
 .btn-encriptar{
     padding: 24px;
-    width: 30%;
+    width: 35%;
     height: 60%;
     border-radius: 24px;
+    border: none;
     margin-left: 15%;
     background-color: #0A3871;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .btn-desencriptar{
     padding: 24px;
-    width: 30%;
+    width: 35%;
     height: 60%;
     border-radius: 24px;
+    border: 1px solid #0A3871;
     margin-left: 10%;
     background-color: #D8DFE8;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
 }
 
 .copiar{
