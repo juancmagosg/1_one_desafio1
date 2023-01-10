@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafío 1</title>
-
-    <!-- Reset CSS -->
-    
+    <!-- Enlazar a Javascript -->
+    <script type="text/javascript" src="script.js"></script>
+    <title>Desafío 1</title>    
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,22 +21,26 @@
 
         <!-- Para el espacio del costado izquierdo -->
         <div class="left">
-            <input class="text-input" type="text" placeholder="Ingrese el texto aquí">
+            <input id="inputTexto" class="text-input" type="text" placeholder="Ingrese el texto aquí">
         </div>
         
         <!-- Para el espacio del costado Derecho -->
         <div class="right">
-            <img src="images/muneco.png" alt="Imagen de muñeco" class="imgDer">
+            <img src="images/muneco.png" alt="Imagen de muñeco" class="imgDer" id="imgDer">
 
-            <h1 class="texto">Ningún mensaje fue encontrado</h1>
-            <textarea class="texto-dos" name="name" rows="8" cols="80">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+            <h1 class="texto" id="texto">Ningún mensaje fue encontrado</h1>
+            <textarea class="texto-dos" id="texto2" name="name" rows="8" cols="80">Ingrese el texto que desees encriptar o desencriptar.</textarea>
+
+            <!-- Botón Copiar -->
+            <button class="copiar" id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
         </div>
 
         <!-- Para los botones -->
         <div class="left-button">
             <p>Sólo minúsculas y sin acentos</p>
-            <button type="button" class="btn-encriptar">Encriptar</button>
-            <button type="button" class="btn-desencriptar">Desencriptar</button>
+            <button type="button" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+
+            <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
         </div>
     </div>
 </body>
