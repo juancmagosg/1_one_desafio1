@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Enlazar a Javascript -->
-    <script type="text/javascript" src="script.js"></script>
-    <title>Desafío 1</title>    
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Desafío 1: Encriptador de texto</title> 
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/logo.png"/>   
     <!-- Fuente de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css">    
 </head>
 
 <body>
-    <div class="container">
-        <!-- Para la franja del logo -->
-        <div class="logo">
-            <img src="images/logoa.png" alt="Logo de Alura" class="logoImg">
-            <h1 class="title">Desafío 1: Encriptador de texto</h1>
+    <main>
+        <div class="container">
+            <!-- Para la franja del logo -->
+            <div class="logo">
+                <img src="images/logoa.svg" alt="Logo de Alura" class="logoImg">
+                <h1 class="title">Desafío 1: Encriptador de texto</h1>
+            </div>
+
+            <!-- Para el espacio del costado izquierdo -->
+            <div class="left">
+                <input id="inputTexto" class="text-input" type="text" placeholder="Ingrese el texto aquí">
+            </div>
+            
+            <!-- Para el espacio del costado Derecho -->
+            <div class="right">
+                <img src="images/muneco.svg" alt="Imagen de muñeco" class="imgDer" id="imgDer">
+
+                <h1 class="texto" id="texto">Ningún mensaje fue encontrado.</h1>
+                <textarea class="texto-dos" id="texto2" name="name" rows="8" cols="80">Ingresa el texto que deseas encriptar o desencriptar.</textarea>
+
+                <!-- Botón Copiar -->
+                <button class="copiar" id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+            </div>
+
+            <!-- Botones -->
+            <div class="left-button">
+                <div class="texto_info">
+                    <div class="info">
+                        <img src="./images/exclamation-circle.svg">
+                        <p id="advertencia">Sólo letras minúsculas y sin acentos.</p>
+                    </div>    
+                </div>            
+                <button type="button" class="btn-encriptar" onclick="encriptar()"><img src="./images/candado.png"> Encriptar</button>
+
+                <button type="button" class="btn-desencriptar" onclick="desencriptar()"><img src="./images/abierto.png"> Desencriptar</button>
+            </div>
         </div>
+    </main>
 
-        <!-- Para el espacio del costado izquierdo -->
-        <div class="left">
-            <input id="inputTexto" class="text-input" type="text" placeholder="Ingrese el texto aquí">
-        </div>
-        
-        <!-- Para el espacio del costado Derecho -->
-        <div class="right">
-            <img src="images/muneco.png" alt="Imagen de muñeco" class="imgDer" id="imgDer">
+    <footer>
+        <p class="copyright">© Desarrollado por<a href="https://github.com/juancmagosg" target="_blank" >Juan Carlos Magos Garnica.</a></p>
+    </footer>
 
-            <h1 class="texto" id="texto">Ningún mensaje fue encontrado.</h1>
-            <textarea class="texto-dos" id="texto2" name="name" rows="8" cols="80">Ingresa el texto que deseas encriptar o desencriptar.</textarea>
-
-            <!-- Botón Copiar -->
-            <button class="copiar" id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
-        </div>
-
-        <!-- Para los botones -->
-        <div class="left-button">
-            <div class="texto_info">
-                <div class="info">
-                    <img src="./images/exclamation-circle.svg">
-                    <p id="advertencia">Sólo letras minúsculas y sin acentos.</p>
-                </div>    
-            </div>            
-            <button type="button" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-
-            <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-        </div>
-    </div>
+    <!-- Archivo Javascript -->    
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
