@@ -41,10 +41,9 @@ function desencriptar(){
   document.getElementById("copiar").style.display = "inherit";
 }
 
+
 function copiar(){
-  var contenido = document.querySelector("#texto2");
-  contenido.select();
-  // Para cortar el texto
-  document.execCommand("copy");
+  var contenido = document.getElementById("texto2").innerHTML;    
+  navigator.clipboard.writeText(contenido);
   alert("¡Se copió el texto!");
 }
