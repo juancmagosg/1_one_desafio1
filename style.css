@@ -7,7 +7,7 @@ body{
 .container{
     margin: auto;
     width: 960px;
-    height: 650px;
+    height: 630px;
     padding: 5px;
     
 }
@@ -68,7 +68,6 @@ body{
     opacity: 1;
 }
 
-
 .right{
     float: right;
     width: 30%;
@@ -119,8 +118,7 @@ body{
     float: left;
     width: 70%;
     height: auto;
-    border-radius: 24px;
-    
+    border-radius: 24px; 
 }
 
 .info {
@@ -208,15 +206,6 @@ body{
 }
 
 .copiar{
-   /*  margin-left: 33%;
-    margin-top: 90%;
-    padding: 24px;
-    width: 40%;
-    height: 10%;
-    background-color: #D8DFE8;
-    border-radius: 24px;
-    display: none; */
-
     display: none;
     padding: 24px;
     width: 80%;
@@ -233,7 +222,6 @@ body{
     line-height: 19px;
     text-align: center;
     color: #0A3871;
-
 }
 
 .copiar img{
@@ -247,16 +235,16 @@ body{
     transition: 0.5s;
 }
 
-.copyright {    
-    margin: 80px;    
-
+.copyright {        
+    margin-top: 63px;        
+    margin-bottom: 0;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 15px;
     line-height: 19px;
     text-align: center;
-    color: #0A3871;
+    color: #0A3871;    
 }
 
 .copyright a {
@@ -264,6 +252,6 @@ body{
     color: #0A3871;
 }
 
-.copyright a:hover {
-    color: blue;
-}
+    .copyright a:hover {
+        color: blue;
+    }
