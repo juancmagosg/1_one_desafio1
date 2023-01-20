@@ -18,6 +18,7 @@ function encriptar(){
   // Aparece botón Copiar
   document.getElementById("copiar").style.display = "show";
   document.getElementById("copiar").style.display = "inherit";
+  inputTexto.value = "";
 }
 
 function desencriptar(){
